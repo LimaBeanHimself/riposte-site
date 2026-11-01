@@ -15,7 +15,7 @@
 </header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="muted">Effective October 28, 2026</p>
+<p class="muted">Effective November 1, 2026</p>
 
 <p>Riposte is an iPhone app for competitive fencers, their parents and their coaches. It follows tournaments live, keeps a private bout journal, connects students with their coach and shows ratings and rankings. This policy explains what information Riposte handles, why, and the choices you have. "Riposte", "we" and "us" mean the people who make the app. You can reach us at <a href="mailto:l1y7iam@gmail.com">l1y7iam@gmail.com</a>.</p>
 
@@ -27,7 +27,8 @@
     <li>Before you make an account, Riposte asks your birth year. We keep only an age group, never your birth date.</li>
     <li>Children under 13 can't make an account. A parent sets Riposte up for them. Without that, they can only look around as a guest.</li>
     <li>Your journals are private. A fencer you write about can never see what you wrote about them.</li>
-    <li>Coaches can only message students who accepted their link, or members of their club. Every chat has block and report.</li>
+    <li>Coaches can't privately message a minor's own account. They reach a minor through a parent's Riposte account. Every chat has block and report.</li>
+    <li>A person reviews every claim on a fencer who may be a minor, and every claim made as a parent, before it takes effect.</li>
     <li>We don't sell your information, show ads or track you across other apps and websites.</li>
     <li>You can delete your account and everything in it from the app at any time.</li>
   </ul>
@@ -50,6 +51,7 @@
 
 <h3>Claiming a fencer profile</h3>
 <p>To link an account to a competition record, you enter the fencing federation member number, last name and birth year. A parent does this for their child. We use these only to match the right fencer and to check the claim. The member number is never shown to other users. The birth year is checked against the public record and not stored on your account.</p>
+<p>These facts are often public, so they can't prove who you are. A claim on a fencer who may be under 18, and any claim as a parent, stays pending until a person reviews it, and links nothing until then. We may email you at your account address and ask for proof, such as your USA Fencing membership page. We use what you send only to check the claim.</p>
 
 <h3>Your bout journal</h3>
 <p>For each bout you choose to journal, Riposte stores:</p>
@@ -63,10 +65,10 @@
 
 <h3>Coaches, lessons and messages</h3>
 <ul>
-  <li><strong>Coach links.</strong> Which coaches you are linked to, and whether you accepted the link.</li>
+  <li><strong>Coach links.</strong> Which coaches you are linked to, and whether you accepted the link. A coach can invite a possible minor only after we have verified the coach.</li>
   <li><strong>Lessons.</strong> Lesson requests, bookings and their notes, and a coach's schedule and open hours.</li>
   <li><strong>Messages.</strong> Messages between a coach and their students, and a club's announcements to its members.</li>
-  <li><strong>Blocks and reports.</strong> Who you blocked, and any report you send us about a chat.</li>
+  <li><strong>Blocks and reports.</strong> Who you blocked, and any report you send us about a chat. A report keeps its own copy of that chat (up to the newest 500 messages), so it can be reviewed even if someone deletes their account.</li>
 </ul>
 
 <h3>The coach assistant</h3>
@@ -119,8 +121,9 @@
   <tr><td>Your journal notes</td><td>Only you. If you turn on "share with coach" for a bout, your linked coach can read that bout's journal.</td></tr>
   <tr><td>Journals other people write about you</td><td>Never you, and never any other user. They are hidden from the fencer they describe.</td></tr>
   <tr><td>Scouting tags (e.g. "left-handed", "fast attacks")</td><td>Combined anonymously with other fencers' tags and shown to other users scouting that opponent, without saying who added them. Never shown to the fencer they describe. Never shown for fencers under 13. Your written notes are never shared.</td></tr>
-  <tr><td>Messages</td><td>Only the coach and the student in that chat (and a child's parent account). Club announcements: the club's members.</td></tr>
-  <tr><td>A report you send</td><td>Only us.</td></tr>
+  <tr><td>Messages</td><td>Only the coach and the student in that chat (and a child's parent account), and us if someone reports the chat. Club announcements: the club's members.</td></tr>
+  <tr><td>A report you send, and its copy of the chat</td><td>Only us.</td></tr>
+  <tr><td>Live alerts about a minor (pools, bouts, Lock Screen updates)</td><td>Only the accounts that act for them (their own or a parent's) and coaches they accepted, not others who follow them. Their public results stay readable, as they are on the organizers' own sites.</td></tr>
   <tr><td>Your age group, member number, email and sign-in details</td><td>Only you (and us, to run the service).</td></tr>
   <tr><td>Public results, ratings and rankings</td><td>Everyone, as on the organizers' own sites.</td></tr>
 </table>
@@ -130,27 +133,28 @@
 <p>We use a small number of providers to run Riposte. They process data only to provide their service to us:</p>
 <ul>
   <li><strong>Supabase:</strong> hosts our database, sign-in and server functions. All the information in section 1 is stored there.</li>
-  <li><strong>Apple:</strong> Sign in with Apple, push notifications and Live Activities, speech recognition when your phone can't do it itself, and app distribution through TestFlight and the App Store. Apple receives your push token and the alert text it delivers.</li>
+  <li><strong>Apple:</strong> Sign in with Apple, push notifications and Live Activities, speech recognition when your phone can't do it itself, and app distribution through TestFlight and the App Store. Apple receives your push token and the alert text it delivers. Alerts never include what someone wrote in a message or note.</li>
   <li><strong>Google:</strong> Sign in with Google, only if you choose it.</li>
-  <li><strong>Anthropic:</strong> two features.
+  <li><strong>Anthropic:</strong> three features.
     <ul>
-      <li><em>AI scouting.</em> When you ask for an AI summary of an opponent, the journals you wrote about that opponent are sent: dates, event, result, score, aggressiveness rating and your notes, plus the opponent's name. If you never ask, nothing is sent.</li>
+      <li><em>AI scouting.</em> When you ask for an AI summary of an opponent, the journals on your account about that opponent are sent: dates, event, result, score, aggressiveness rating and your notes, plus the opponent's name. On a parent's account this can include journals kept for their child. If you never ask, nothing is sent.</li>
       <li><em>Coach assistant.</em> Anthropic's model may answer the coach's assistant requests (see NVIDIA below for what is sent).</li>
       <li><em>Parent assistant.</em> When a parent asks a question, it receives the question and, for each child it's about: their first name (for a child under 13, a stand-in such as "Child 1" instead, and the name is also removed from the question), age group, weapon, region, season goals and the public competitions picked for them. Never a last name, birth year, member number or contact details.</li>
     </ul>
     Under Anthropic's commercial terms this data is not used to train their models.</li>
-  <li><strong>NVIDIA (NIM):</strong> the AI model the coach and parent assistants use when Anthropic's isn't available. For the parent assistant it receives exactly what Anthropic would (above). For the coach assistant: When a coach writes or speaks to the assistant, it receives the coach's message and name, their recent chat with the assistant and its notes, their lessons, open hours and busy times, and their students' first names and Riposte IDs. Students' last names are sent only for students 13 and over. No journals, messages or contact details are sent.</li>
+  <li><strong>NVIDIA (NIM):</strong> the AI model the coach and parent assistants use when Anthropic's isn't available. For the parent assistant it receives exactly what Anthropic would (above). For the coach assistant: When a coach writes or speaks to the assistant, it receives the coach's message and name, their recent chat with the assistant and its notes, their lessons, open hours and busy times, and their students' first names. For students 13 and over it also receives last names and Riposte IDs, which contain the last name. For a student who may be under 13 it receives the first name and a random stand-in instead of the ID. No journals, messages or contact details are sent. We can't remove a name a coach types or says to the assistant themselves.</li>
 </ul>
-<p>Nothing that identifies a fencer under 13 is sent to an AI service: no name, birth year or member number. The parent assistant refers to them only as "Child 1", "Child 2" and so on, with their age group, weapon and region, and puts the name back on your phone. AI scouting is never used for opponents under 13, and is off for users under 18 unless they turn it on.</p>
+<p>For fencers who may be under 13, we limit what reaches an AI service. Their last name, birth year and member number are not sent by our features. The coach assistant receives only a first name, as above. The parent assistant refers to them only as "Child 1", "Child 2" and so on, with their age group, weapon and region, and puts the name back before showing you the answer. AI scouting is never used for opponents who may be under 13, and is off for users under 18 unless they turn it on.</p>
+<p>We decide who may be under 13 from the published birth year and the age group on an account. If a fencer has no published birth year, we can't tell from the record, and these limits may not apply to them. Parents can email us about such a profile.</p>
 <p>We don't sell or rent personal information, and we don't share it for advertising. We may disclose information if the law requires it, or to protect the safety of our users or the service.</p>
 
 <h2>5. Children and parents</h2>
-<p>Fencing has youth events, and many Riposte users are under 18. This section explains how we follow the Children's Online Privacy Protection Act (COPPA) and similar laws.</p>
+<p>Fencing has youth events, and many Riposte users are under 18. This section explains how we handle children's information, including under the Children's Online Privacy Protection Act (COPPA) and similar laws.</p>
 
 <h3>Age rules in the app</h3>
 <ul>
-  <li><strong>Under 13.</strong> A child can't make an account. They can look around as a guest, which stores no name, email or birth date, and follow one fencer for event alerts. A parent must set Riposte up for them through a parent account.</li>
-  <li><strong>13 to 17.</strong> Teens can sign up themselves, with a parent's permission (see our <a href="terms.html">Terms</a>). A coach can only message them after the teen, or their parent, accepts the coach's link. AI scouting is off unless they turn it on. Coach accounts need age 16 or older.</li>
+  <li><strong>Under 13.</strong> A child can't make an account. They can look around as a guest, which stores no name, email or birth date, and follow one fencer. Under-13 accounts hold no push tokens, so they get no push notifications. A parent must set Riposte up for them through a parent account.</li>
+  <li><strong>13 to 17.</strong> Teens can sign up themselves, with a parent's permission (see our <a href="terms.html">Terms</a>). Coaches can't message a teen's own account, reply to their journal or send them notes. A coach reaches them through a parent's Riposte account. Club announcements still reach them. AI scouting is off unless they turn it on. Coach accounts need age 16 or older.</li>
   <li><strong>Guests</strong> can look but not change anything: no journals, messages, coach links, bookings, check-in or friends.</li>
 </ul>
 
@@ -158,12 +162,12 @@
 <ul>
   <li><strong>Public results.</strong> Names, clubs, birth years, ratings and results already published by organizers and results sites, for every fencer including children.</li>
   <li><strong>Through a parent account.</strong> The member number, last name and birth year the parent enters to claim their child's profile, and the information the child's use of Riposte creates: journals, coach links, lesson requests and bookings, and messages with their coach.</li>
-  <li><strong>From a child guest.</strong> Only a random account ID, the one fencer they follow and a push token if notifications are on.</li>
+  <li><strong>From a child guest.</strong> Only a random account ID, their age group and the one fencer they follow.</li>
 </ul>
-<p>We use this information only to run Riposte for the child and their parent. We don't use it for advertising, we don't sell it, and we never send it to an AI service.</p>
+<p>We use this information only to run Riposte for the child and their parent. We don't use it for advertising and we don't sell it. Section 4 lists exactly what can reach an AI service.</p>
 
 <h3>How parents consent</h3>
-<p>An adult (18 or older) signs up with Apple or Google and chooses to set up Riposte for their child. They read our <a href="parents.html">Notice to parents</a> and agree to it. Then they claim their child's fencer profile with the member number, last name and birth year. We record which parent agreed, for which fencer, when, and the notice version.</p>
+<p>An adult (18 or older) signs up with Apple or Google and chooses to set up Riposte for their child. They read our <a href="parents.html">Notice to parents</a> and agree to it. Then they claim their child's fencer profile with the member number, last name and birth year. A person reviews the claim and may ask for proof that they are the parent. Nothing is linked until it is approved. We record which parent agreed, for which fencer, when, and the notice version.</p>
 <p>We don't ask for more information than a feature needs. A child doesn't have to give more information to take part.</p>
 
 <h3>Parents' rights</h3>
@@ -186,6 +190,7 @@
 <ul>
   <li><strong>Account, journals, coach links, lessons, messages and preferences:</strong> until you delete them or delete your account.</li>
   <li><strong>Parent consent records:</strong> while the consent stands, and deleted with the account.</li>
+  <li><strong>Reports and their copy of the chat:</strong> kept after review, even if either account is deleted, for as long as we need them for safety or legal reasons.</li>
   <li><strong>Coach assistant chat and notes:</strong> until the coach clears them or deletes the account.</li>
   <li><strong>Notifications in the app:</strong> 30 days after they are read or delivered, and 60 days at most.</li>
   <li><strong>Push delivery records:</strong> 14 days.</li>
@@ -199,7 +204,7 @@
 
 <h2>7. Your choices and rights</h2>
 <ul>
-  <li><strong>Delete your account:</strong> Profile → Settings → Delete account. This permanently removes your account and its data: journals, follows, coach links, lessons, messages, tokens and preferences.</li>
+  <li><strong>Delete your account:</strong> Profile → Settings → Delete account. This permanently removes your account and its data: journals, follows, coach links, lessons, messages, tokens and preferences. A report's copy of a chat is kept, as section 6 explains.</li>
   <li><strong>Edit or delete a journal</strong> at any time in the app.</li>
   <li><strong>Block or report</strong> anyone you chat with, from the chat.</li>
   <li><strong>Notifications:</strong> turn them off in the app or in iOS Settings.</li>
@@ -212,7 +217,7 @@
 <p>Competition results are published by tournament organizers. If you are a fencer, or the parent of one, and want your public results corrected or hidden in Riposte, email us from the address linked to your account, or include enough detail for us to identify the record. We'll reply within 30 days.</p>
 
 <h2>9. Security</h2>
-<p>We keep a written information security program. In short:</p>
+<p>How we protect your information:</p>
 <ul>
   <li><strong>Access controls.</strong> Database rules limit each person to their own private data. Only the developer can reach the production systems.</li>
   <li><strong>Encryption.</strong> Data is encrypted in transit (HTTPS) and at rest by our hosting provider, Supabase.</li>

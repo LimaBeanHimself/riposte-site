@@ -15,7 +15,7 @@
 </header>
 <main>
 <h1>Notice to Parents</h1>
-<p class="muted">Version 2026-10-28</p>
+<p class="muted">Version 2026-11-01</p>
 
 <p>You are setting up Riposte for your child. Before you do, we need your consent to collect and use your child's information. This notice explains what that means. Please read it before you agree in the app.</p>
 
@@ -23,8 +23,9 @@
   <strong>The short version</strong>
   <ul>
     <li>We collect only what Riposte needs to work for your child.</li>
-    <li>We never sell it or use it for ads. The parent assistant never sees anything that identifies a child under 13.</li>
-    <li>Coaches can only message your child after you or your child accept their link.</li>
+    <li>We never sell it or use it for ads. Section 4 lists exactly what can reach an AI service.</li>
+    <li>Coaches can't privately message your child's own account. They reach your child through your Riposte account.</li>
+    <li>A person reviews your claim before it takes effect, and may ask you for proof that you are the parent.</li>
     <li>You can see, delete or stop it at any time, in the app or by email.</li>
   </ul>
 </div>
@@ -38,9 +39,9 @@
 
 <h2>3. What we collect about your child</h2>
 <ul>
-  <li><strong>To claim their profile:</strong> their fencing federation member number, last name and birth year. You enter these. We use them only to match and check the profile.</li>
+  <li><strong>To claim their profile:</strong> their fencing federation member number, last name and birth year. You enter these. We use them only to match and check the profile. Nothing is linked until a person approves the claim.</li>
   <li><strong>What their use of Riposte creates:</strong> bout journals, coach links, lesson requests and bookings, and messages with their coach.</li>
-  <li><strong>For alerts:</strong> the push token Apple gives the app, if notifications are on.</li>
+  <li><strong>For alerts:</strong> the push token Apple gives the app on your phone, if notifications are on. An under-13 account holds no push token.</li>
 </ul>
 <p>Riposte also shows public competition results about your child: name, club, birth year, ratings and results. These come from askFRED, USA Fencing rankings, FencingTracker, Fencing Time Live and results files uploaded by organizers. They are shown whether or not you use Riposte.</p>
 <p>Riposte doesn't access your child's location, contacts or photos, and has no ads, analytics or tracking.</p>
@@ -52,7 +53,9 @@
   <li>To connect them with their coach: links, lessons and messages.</li>
   <li>To keep Riposte safe, including reviewing reports.</li>
 </ul>
-<p>We don't use it for advertising. Nothing that identifies a child under 13 is ever sent to an AI service: when you ask the parent assistant about them, it sees only "Child 1" (no name, birth year or member number), their age group, weapon, region and the public competitions picked for them. Other users never see scouting tags about them.</p>
+<p>We don't use it for advertising. Other users never see scouting tags about a child who may be under 13.</p>
+<p>Some information can reach an AI service, and only in these cases. When you ask the parent assistant about a child who may be under 13, it sees "Child 1" (no name, birth year or member number), their age group, weapon, region and the public competitions picked for them. When their linked coach uses the coach assistant, it sees your child's first name and their lessons, but no last name, birth year or member number. A coach could also type or say a name themselves. If you ask for an AI scouting summary of an opponent, the journals on your account about that opponent are sent, which can include ones kept for your child. For a child 13 or older, the parent assistant also sees their first name, the coach assistant also sees their last name and Riposte ID, and a teen who turns on AI scouting can send their own journals the same way. The opponent must not be someone who may be under 13.</p>
+<p>We go by the published birth year. If your child has no published birth year, we can't tell their age from the record and these limits may not apply, so please email us.</p>
 
 <h2>5. No more than we need</h2>
 <p>We ask only for what a feature needs. Your child doesn't have to give more information to take part in any activity.</p>
@@ -61,14 +64,17 @@
 <ul>
   <li><strong>Supabase</strong> hosts our database, sign-in and server functions. Your child's information is stored there.</li>
   <li><strong>Apple</strong> delivers push notifications and receives the push token and the alert text.</li>
-  <li><strong>Coaches</strong> your child is linked to see their lessons, their messages with them, and any journal entry your child chooses to share.</li>
+  <li><strong>Anthropic and NVIDIA</strong> provide the AI models behind the assistants and scouting, and receive only what section 4 describes. Under Anthropic's commercial terms this data is not used to train their models.</li>
+  <li><strong>Coaches</strong> your child is linked to see their lessons, messages through your account, and any journal entry shared with them.</li>
 </ul>
 <p>We don't share your child's information with anyone else, except if the law requires it or to protect someone's safety. We don't sell it.</p>
 
 <h2>7. Coaches and messages</h2>
 <ul>
-  <li>A coach can only message your child after you or your child accept the coach's link, or if the coach coaches at your child's club.</li>
-  <li>Every chat has block and report. We review every report.</li>
+  <li>A coach can't message your child's own account, reply to their journal or send them notes. A coach writes to your Riposte account, after the link is accepted or if they coach at your child's club. Club announcements still reach your child.</li>
+  <li>A coach can invite a possible minor only after we have verified the coach.</li>
+  <li>Live alerts about your child go only to you, your child's own account and coaches you accepted, not to others who follow them.</li>
+  <li>Every chat has block and report. We review every report. A report keeps a copy of that chat, even if someone deletes their account.</li>
   <li>Coaches agree not to contact children outside Riposte's coach links.</li>
 </ul>
 
@@ -84,6 +90,7 @@
 <h2>9. How long we keep it</h2>
 <ul>
   <li>Journals, coach links, lessons and messages: until you delete them, withdraw consent or delete the account.</li>
+  <li>A report and its copy of the chat: kept after review, for as long as we need them for safety or legal reasons.</li>
   <li>Notifications in the app: 30 days after they're read or delivered, 60 days at most.</li>
   <li>Push delivery records: 14 days.</li>
   <li>Public competition results stay, because they are public records. You can ask us to hide your child's profile.</li>
