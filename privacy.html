@@ -51,7 +51,7 @@
 
 <h3>Claiming a fencer profile</h3>
 <p>To link an account to a competition record, you enter the fencing federation member number, last name and birth year. A parent does this for their child. We use these only to match the right fencer and to check the claim. The member number is never shown to other users. The birth year is checked against the public record and not stored on your account.</p>
-<p>These facts are often public, so they can't prove who you are. A claim on a fencer who may be under 18, and any claim as a parent, stays pending until a person reviews it, and links nothing until then. We may email you at your account address and ask for proof, such as your USA Fencing membership page. We use what you send only to check the claim.</p>
+<p>These facts are often public, so they can't prove who you are. A claim on a fencer who may be under 18, and any claim as a parent, stays pending until a person reviews it, and links nothing until then. We may email you at your account address and ask for proof, such as your federation membership page. We use what you send only to check the claim.</p>
 
 <h3>Your bout journal</h3>
 <p>For each bout you choose to journal, Riposte stores:</p>
@@ -90,7 +90,7 @@
 </ul>
 
 <h3>Public competition information</h3>
-<p>Riposte shows tournament information that organizers and results sites already publish openly. It comes from askFRED, USA Fencing rankings, FencingTracker, Fencing Time Live and results files uploaded by organizers:</p>
+<p>Riposte shows tournament information that organizers and results sites already publish openly. It comes from public results and rankings sites and from results files uploaded by organizers:</p>
 <ul>
   <li>names, clubs and birth years as published;</li>
   <li>entry lists, pool assignments and scores;</li>
@@ -145,7 +145,7 @@
   <li><strong>NVIDIA (NIM):</strong> the AI model the coach and parent assistants use when Anthropic's isn't available. For the parent assistant it receives exactly what Anthropic would (above). For the coach assistant: When a coach writes or speaks to the assistant, it receives the coach's message and name, their recent chat with the assistant and its notes, their lessons, open hours and busy times, and their students' first names. For students 13 and over it also receives last names and Riposte IDs, which contain the last name. For a student who may be under 13 it receives the first name and a random stand-in instead of the ID. No journals, messages or contact details are sent. We can't remove a name a coach types or says to the assistant themselves.</li>
 </ul>
 <p>For fencers who may be under 13, we limit what reaches an AI service. Their last name, birth year and member number are not sent by our features. The coach assistant receives only a first name, as above. The parent assistant refers to them only as "Child 1", "Child 2" and so on, with their age group, weapon and region, and puts the name back before showing you the answer. AI scouting is never used for opponents who may be under 13, and is off for users under 18 unless they turn it on.</p>
-<p>We decide who may be under 13 from the published birth year and the age group on an account. If a fencer has no published birth year, we can't tell from the record, and these limits may not apply to them. Parents can email us about such a profile.</p>
+<p>We decide who may be under 13 from the published birth year and the age group on an account. A fencer with no published birth year is treated as possibly under 13, unless an adult has claimed the profile as their own.</p>
 <p>We don't sell or rent personal information, and we don't share it for advertising. We may disclose information if the law requires it, or to protect the safety of our users or the service.</p>
 
 <h2>5. Children and parents</h2>
@@ -217,7 +217,7 @@
 <p>Competition results are published by tournament organizers. If you are a fencer, or the parent of one, and want your public results corrected or hidden in Riposte, email us from the address linked to your account, or include enough detail for us to identify the record. We'll reply within 30 days.</p>
 
 <h2>9. Security</h2>
-<p>How we protect your information:</p>
+<p>We keep a written information security program. In short:</p>
 <ul>
   <li><strong>Access controls.</strong> Database rules limit each person to their own private data. Only the developer can reach the production systems.</li>
   <li><strong>Encryption.</strong> Data is encrypted in transit (HTTPS) and at rest by our hosting provider, Supabase.</li>
